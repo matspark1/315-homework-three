@@ -1,0 +1,119 @@
+.home-hero {
+  height: 650px;
+  width: 100%;
+  background-position: center;
+  border-radius: 20px;
+  display: flex;
+  max-width: 98%;
+  transition: ease 1s;
+  overflow: hidden;
+  margin: 0 auto 20px auto;
+
+  .home-hero-text {
+    width: 50%;
+    margin-left: 15px;
+    transition: ease 0.6s;
+    color: $site-w;
+    background-color: #141414;
+    padding: 30px;
+    height: 100%;
+    border-radius: 20px;
+    ul {
+      margin-left: 30px;
+    }
+    h1 {
+      color: $site-w;
+      font-family: $PopB;
+      font-size: 40px;
+      position: relative;
+    }
+    p {
+      color: $site-w;
+    }
+  }
+
+  img {
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+    transition: ease 1s;
+  }
+}
+
+.home-events {
+  background-image: url(../images/home-event.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 450px;
+  width: 98%;
+  margin: 0 auto 20px auto;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .h-event-txt {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: auto 0;
+    h1 {
+      font-family: $PopBold;
+      font-size: 70px;
+      text-align: center;
+      color: $site-w;
+    }
+    a {
+      padding: 15px 30px;
+      border: 1px solid $site-w;
+      border-bottom: 5px solid $site-w;
+      border-radius: 40px;
+      color: $site-w;
+      text-decoration: none;
+      font-size: 22px;
+      background-color: rgb(17, 174, 69, 0.76);
+      transition: ease 0.1s;
+      &:hover {
+        border-bottom: 1px solid $site-w;
+        margin-top: 4px;
+        transition: ease 0.1s;
+      }
+    }
+  }
+  .h-event-header {
+    height: 120px;
+  }
+}
+
+@media screen and (max-width: 1530px) {
+  .site-wrapper {
+    .home-hero {
+      .home-hero-text {
+        ul {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .site-wrapper {
+    .home-hero {
+      .home-hero-text {
+        span {
+          opacity: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1095px) {
+  .site-wrapper {
+    .home-hero {
+      margin-left: 0%;
+    }
+  }
+}

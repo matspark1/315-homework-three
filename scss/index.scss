@@ -1,0 +1,128 @@
+.top-wrapper {
+  width: 100%;
+  nav {
+    height: 80px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+    font-family: $PopLight;
+    background-color: #141414;
+    border-radius: 30px;
+    margin-top: 15px;
+    a {
+      text-decoration: none;
+      color: $site-w;
+    }
+    .logo {
+      font-family: $PopB;
+      font-size: 32px;
+      margin-left: 15px;
+      transition: ease 0.07s;
+      border-radius: 40px;
+      padding: 3px 20px;
+      border: 1px solid $site-w;
+      border-bottom: 5px solid $site-w;
+      span{
+        color: $site-w;
+      }
+      &:hover {
+        border-bottom: 1px solid $site-w;
+       }
+    }
+    .left-nav {
+      margin: 0 40px;
+      a {
+        font-size: 17px;
+        padding: 10px 20px;
+        transition: ease 0.1s;
+      }
+      .eventnav {
+        &:hover {
+          border-bottom: 4px solid #11ae45;
+        }
+      }
+      .ticketnav {
+        &:hover {
+          border-bottom: 4px solid #235ac9;
+        }
+      }
+      .guestnav {
+        &:hover {
+          border-bottom: 4px solid #c92323;
+        }
+      }
+      .contactnav {
+        &:hover {
+          border-bottom: 4px solid $site-w;
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  height: 70px;
+  max-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 3px solid #141414;
+  border-radius: 30px;
+  margin: 10px 40px;
+
+  .foot-text {
+    font-family: $PopMed;
+  }
+  p {
+    color: #262626;
+    margin: 0 20px;
+  }
+  .footer-links {
+    width: 300px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  a {
+    height: 40px;
+    width: 40px;
+    color: #141414;
+    text-decoration: none;
+    font-size: 1.45rem;
+    margin: 0px 20px;
+    transition: ease 0.35s;
+    text-align: center;
+    border-radius: 30px;
+    border: 1px solid #141414;
+    border-bottom: 4px solid #141414;
+    transition: ease 0.1s;
+    i {
+      margin-top: 18%;
+      margin-left: 3%;
+    }
+    &:hover {
+      i{
+        margin-top: 20%;
+      }
+      border-bottom: 1px solid #141414;
+      transition: ease 0.1s;
+    }
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .site-wrapper {
+    .footer {
+      .foot-text {
+        opacity: 0;
+        font-size: 6px;
+      }
+      .footer-links {
+        width: 200px;
+      }
+    }
+  }
+}

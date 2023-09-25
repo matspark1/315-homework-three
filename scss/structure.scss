@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  font-family: $PopReg;
+  background-color: #f2f2f2;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+  color: #262626;
+}
+
+#inject {
+  margin: 10px 40px 0px 40px;
+}
+
+.site-wrapper {
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #aaaaaa;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #141414;
+  border-radius: 10px;
+}
+
+@font-face {
+  font-family: "PopB";
+  src: url(../css/fonts/Poppins-Black.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PopBold";
+  src: url(../css/fonts/Poppins-Bold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PopSemiB";
+  src: url(../css/fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PopM";
+  src: url(../css/fonts/Poppins-Medium.ttf) format("truetype");
+}
+@font-face {
+  font-family: "PopL";
+  src: url(../css/fonts/Poppins-Light.ttf) format("truetype");
+}
